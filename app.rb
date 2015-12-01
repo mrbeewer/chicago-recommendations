@@ -7,7 +7,9 @@ ActiveRecord::Base.establish_connection(
 )
 
 get "/" do
-  return "Test"
+  @places = Place.all
+
+  erb :places
 end
 
 

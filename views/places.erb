@@ -1,0 +1,27 @@
+<h1>Chicago Recommendations</h1>
+
+<% @places.each do |place| %>
+
+  <li> <%= place.place %> is a <%= place.type_of_place %> </li>
+
+<% end %>
+
+<br>
+
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Contributor</th>
+    <th>Notes</th>
+  <% @places.each do |place| %>
+    <tr>
+      <td> <%= place.place %> </td>
+      <td> <%= place.type_of_place %> </td>
+      <td> <%= place.contributor %> </td>
+      <td> <%= place.notes %> </td>
+    </tr>
+
+  <% end %>
+</table>
