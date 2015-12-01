@@ -7,3 +7,4 @@ require "./controllers/places"
 require "./models/place"
 
 map("/") { run PlacesController}
+# map("/users") { run UsersController }
