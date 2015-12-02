@@ -8,6 +8,11 @@ class PlacesController < ApplicationController
     # erb :places
   end
 
+  get "/place" do
+    @places = Place.all
+    erb :places
+  end
+
   get "/create" do
     erb :create_recommendation
   end
